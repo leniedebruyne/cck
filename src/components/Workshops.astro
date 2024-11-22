@@ -1,4 +1,9 @@
 ---
+import { getCollection } from "astro:content";
+
+// Get all `src/content/blog/` entries
+const allWorkshops = await getCollection("workshops");
+
 
 ---
 

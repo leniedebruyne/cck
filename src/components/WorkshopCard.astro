@@ -1,17 +1,19 @@
 ---
 import { Image } from "astro:assets";
 import ArrowLink from "./ArrowLink.astro";
+
+// Importeer de afbeelding direct
+import p5Image from "./content/img/p5.png";
+
+const slug = "workshops/workshop";
 ---
 
 <article>
   <div>
-    <h3><span>{##TITLE##}</span></h3>
-    <ArrowLink
-      class="link"
-      href={`/workshops/${##SLUG##}`}
-      title="Learn more"
-    />
-    <Image class="image" src={##IMAGE##} alt="" />
+    <h3><span>workshops</span></h3>
+    <ArrowLink class="link" href={`/workshops/${slug}`} title="Learn more" />
+
+    <Image class="image" src={p5Image} alt="kweetet nie" />
   </div>
 </article>
 
